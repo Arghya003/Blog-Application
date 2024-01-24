@@ -10,7 +10,9 @@ const RegisterPage = () => {
       body:JSON.stringify({username,password}),
       headers:{'Content-Type':"application/json"}
     })
-      if(response===200){
+
+    console.log(response)
+      if(response.status===200){
         alert('registration succesful');
 
       }
